@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Custom Hooks</title>
+    <title>JSDoc: Source: useTimeout/useTimeout.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,59 @@
 
 <div id="main">
 
-    <h1 class="page-title">Custom Hooks</h1>
+    <h1 class="page-title">Source: useTimeout/useTimeout.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { useCallback, useEffect, useRef } from 'react';
 
+/**
+ * Runs a function inside a timeout and allows to control it by reseting
+ * or by clearing it.
+ *
+ * @param {function} callback - the function to run after the delay.
+ * @param {number} delay delay in ms.
+ *
+ * @returns {object} - { reset, clear }
+ */
+const useTimeout = (callback, delay) => {
+  const callbackRef = useRef(callback);
+  const timeoutRef = useRef();
 
-    <h3> </h3>
+  useEffect(() => {
+    callbackRef.current = callback;
+  }, [callback]);
 
+  const set = useCallback(() => {
+    timeoutRef.current = setTimeout(() => callbackRef.current(), delay);
+  }, [delay]);
 
+  const clear = useCallback(() => {
+    if (timeoutRef.current) clearTimeout(timeoutRef.current);
+  }, []);
 
+  useEffect(() => {
+    set();
+    return clear;
+  }, [delay, set, clear]);
 
+  const reset = useCallback(() => {
+    clear();
+    set();
+  }, [clear, set]);
 
+  return { reset, clear };
+};
 
-
-
-
-
-    
-
-
-
-
-
+export { useTimeout };
+</code></pre>
+        </article>
+    </section>
 
 
 
