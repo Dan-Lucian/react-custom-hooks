@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Custom Hooks</title>
+    <title>JSDoc: Source: useDebounce/useDebounce.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,35 @@
 
 <div id="main">
 
-    <h1 class="page-title">Custom Hooks</h1>
+    <h1 class="page-title">Source: useDebounce/useDebounce.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>import { useEffect } from 'react';
+import { useTimeout } from '../useTimeout/useTimeout';
 
+/**
+ * Runs a timeout only after a state has stopped changing for an amount of ms.
+ * It "debounces" the previous timeout if a state in the dep array has changed.
+ * @param {function} callback The function to run.
+ * @param {number} delay delay in ms.
+ * @param {array} dependencies array of dependencies.
+ */
+const useDebounce = (callback, delay, dependencies) => {
+  const { reset, clear } = useTimeout(callback, delay);
+  useEffect(reset, [...dependencies, reset]);
+  useEffect(clear, [clear]);
+};
 
-    <h3> </h3>
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+export { useDebounce };
+</code></pre>
+        </article>
+    </section>
 
 
 
