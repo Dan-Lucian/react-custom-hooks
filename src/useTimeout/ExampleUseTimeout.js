@@ -13,7 +13,8 @@ const ExampleUseTimeout = () => {
   const { clear, reset } = useTimeout(increment, 1000);
 
   return (
-    <div>
+    <article>
+      <h2>Example useTimeout</h2>
       <p>{number}</p>
       <button type="button" onClick={clear}>
         Clear
@@ -21,7 +22,7 @@ const ExampleUseTimeout = () => {
       <button type="button" onClick={reset}>
         Reset
       </button>
-    </div>
+    </article>
   );
 };
 

@@ -9,12 +9,13 @@ const ExampleUseLocalStorage = () => {
   };
 
   return (
-    <div>
+    <article>
+      <h2>Example useLocalStorage</h2>
       <p>
         The text written in the input is saved in local storage in real time
       </p>
       <input type="text" value={textInput} onChange={handleChange} />
-    </div>
+    </article>
   );
 };
 
