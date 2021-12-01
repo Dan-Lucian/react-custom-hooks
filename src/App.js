@@ -4,6 +4,7 @@ import ExampleUseScrollDirection from './useScrollDirection/ExampleUseScrollDire
 import ExampleUseLocalStorage from './useLocalStorage/ExampleUseLocalStorage';
 import ExampleUseAsync from './useAsync/ExampleUseAsync';
 import ExampleUseDebounce from './useDebounce/ExampleUseDebounce';
+import ExampleUseArray from './useArray/ExampleUseArray';
 
 const App = () => (
   <div style={{ height: '2000px' }}>
@@ -19,6 +20,8 @@ const App = () => (
     <ExampleUseAsync />
     <hr />
     <ExampleUseDebounce />
+    <hr />
+    <ExampleUseArray />
     <hr />
   </div>
 );
