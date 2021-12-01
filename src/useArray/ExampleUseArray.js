@@ -1,13 +1,15 @@
 import { useArray } from './useArray';
 
+// utils
+import Example from '../Example';
+
 const ExampleUseArray = () => {
   const initialArray = [1, 2, 3, 4, 5];
   const { array, set, push, filter, update, remove, clear } =
     useArray(initialArray);
 
   return (
-    <article id="use-array">
-      <h1>useArray</h1>
+    <Example title="useArray">
       <p>{JSON.stringify(array)}</p>
       <div>
         <button onClick={() => set([1, 2, 3, 4, 5, 6])} type="button">
@@ -29,7 +31,7 @@ const ExampleUseArray = () => {
           clear()
         </button>
       </div>
-    </article>
+    </Example>
   );
 };
 

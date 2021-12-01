@@ -1,5 +1,8 @@
 /* eslint-disable no-use-before-define */
 import { useAsync } from './useAsync';
+
+// utils
+import Example from '../Example';
 import { fakeRequest } from '../utlis';
 
 const ExampleUseAsync = () => {
@@ -22,15 +25,14 @@ const ExampleUseAsync = () => {
   // use the details from the hook to conditionally render components
   // which depend on the status or the error
   return (
-    <article id="use-async">
-      <h2>useAsync</h2>
+    <Example title="useAsync">
       <button onClick={makeRequest} type="button">
         Make request
       </button>
       <div>Request status: {status}</div>
       {myData && <p>{myData}</p>}
       {error && <p>An error occurred</p>}
-    </article>
+    </Example>
   );
 };
 

@@ -8,8 +8,15 @@ import ExampleUseDebounce from './useDebounce/ExampleUseDebounce';
 import ExampleUseArray from './useArray/ExampleUseArray';
 
 const App = () => (
-  <div>
-    <h1>Cutom Hooks</h1>
+  <main className="wrapper-main">
+    <h1 id="main-title">Cutom Hooks</h1>
+    <a
+      target="_self"
+      title="Github markdown doesn't support blank (("
+      href="https://github.com/Dan-Lucian/react-custom-hooks"
+    >
+      Go back to github repo
+    </a>
     <ol className="list-custom-hooks">
       <li>
         <a href="#use-toggle">useToggle</a>
@@ -35,20 +42,13 @@ const App = () => (
     </ol>
 
     <ExampleUseToggle />
-    <hr />
     <ExampleUseTimeout />
-    <hr />
     <ExampleUseScrollDirection />
-    <hr />
     <ExampleUseLocalStorage />
-    <hr />
     <ExampleUseAsync />
-    <hr />
     <ExampleUseDebounce />
-    <hr />
     <ExampleUseArray />
-    <hr />
-  </div>
+  </main>
 );
 
 export default App;

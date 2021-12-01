@@ -1,5 +1,8 @@
 import { useLocalStorage } from './useLocalStorage';
 
+// utils
+import Example from '../Example';
+
 const ExampleUseLocalStorage = () => {
   // textInput is saved in local storage on every change
   const [textInput, setTextInput] = useLocalStorage('text');
@@ -9,13 +12,12 @@ const ExampleUseLocalStorage = () => {
   };
 
   return (
-    <article id="use-local-storage">
-      <h2>useLocalStorage</h2>
+    <Example title="useLocalStorage">
       <p>
         The text written in the input is saved in local storage in real time
       </p>
       <input type="text" value={textInput} onChange={handleChange} />
-    </article>
+    </Example>
   );
 };
 

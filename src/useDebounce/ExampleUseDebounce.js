@@ -1,6 +1,9 @@
 /* eslint-disable no-use-before-define */
 import { useState } from 'react';
 import { useDebounce } from './useDebounce';
+
+// utils
+import Example from '../Example';
 import { fakeRequest } from '../utlis';
 
 const ExampleUseDebounce = () => {
@@ -19,12 +22,11 @@ const ExampleUseDebounce = () => {
   };
 
   return (
-    <article id="use-debounce">
-      <h2>useDebounce</h2>
+    <Example title="useDebounce">
       <p>The request will be made only after user stopped typing for 1s</p>
       <input type="text" value={textInput} onChange={handleChange} />
       <p>Received: {data}</p>
-    </article>
+    </Example>
   );
 };
 

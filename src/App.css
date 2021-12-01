@@ -1,10 +1,19 @@
-.list-custom-hooks a, 
-.list-custom-hooks a:link, 
-.list-custom-hooks a:visited{
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.list-custom-hooks a,
+.list-custom-hooks a:link,
+.list-custom-hooks a:visited {
   color: #000;
 }
 
-.list-custom-hooks li{
-  margin-bottom: .3em;
+.list-custom-hooks li {
+  margin-bottom: 0.3em;
 }
 
+.wrapper-main {
+  padding-bottom: 1000px;
+  padding-left: 1em;
+}

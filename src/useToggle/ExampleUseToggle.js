@@ -1,16 +1,16 @@
 import { useToggle } from './useToggle';
+import Example from '../Example';
 
 const ExampleUseToggle = () => {
   const [isToggled, toggle] = useToggle(false);
 
   return (
-    <article id="use-toggle">
-      <h2>useToggle</h2>
+    <Example title="useToggle">
       <button type="button" onClick={toggle}>
         {isToggled && 'toggled'}
         {!isToggled && 'not toggled'}
       </button>
-    </article>
+    </Example>
   );
 };
 

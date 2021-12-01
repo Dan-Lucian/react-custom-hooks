@@ -1,6 +1,9 @@
 import { useState } from 'react';
 import { useTimeout } from './useTimeout';
 
+// utils
+import Example from '../Example';
+
 const ExampleUseTimeout = () => {
   const [number, setNumber] = useState(0);
 
@@ -13,8 +16,7 @@ const ExampleUseTimeout = () => {
   const { clear, reset } = useTimeout(increment, 1000);
 
   return (
-    <article id="use-timeout">
-      <h2>useTimeout</h2>
+    <Example title="useTimeout">
       <p>{number}</p>
       <button type="button" onClick={clear}>
         Clear
@@ -22,7 +24,7 @@ const ExampleUseTimeout = () => {
       <button type="button" onClick={reset}>
         Reset
       </button>
-    </article>
+    </Example>
   );
 };
 
