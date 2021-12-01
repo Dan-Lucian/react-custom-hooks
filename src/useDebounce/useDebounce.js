@@ -10,7 +10,11 @@ import { useTimeout } from '../useTimeout/useTimeout';
  */
 const useDebounce = (callback, delay, dependencies) => {
   const { reset, clear } = useTimeout(callback, delay);
+
+  // if dep changed reset the timer
   useEffect(reset, [...dependencies, reset]);
+
+  // denies the very first run
   useEffect(clear, [clear]);
 };
 
