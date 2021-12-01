@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,4EAGE,UACF,CAEA,sBACE,kBACF","file":"main.70476ad8.chunk.css","sourcesContent":[".list-custom-hooks a, \r\n.list-custom-hooks a:link, \r\n.list-custom-hooks a:visited{\r\n  color: #000;\r\n}\r\n\r\n.list-custom-hooks li{\r\n  margin-bottom: .3em;\r\n}\r\n\r\n"]}
