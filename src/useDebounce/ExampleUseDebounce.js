@@ -19,8 +19,8 @@ const ExampleUseDebounce = () => {
   };
 
   return (
-    <article>
-      <h2>Example useDebounce</h2>
+    <article id="use-debounce">
+      <h2>useDebounce</h2>
       <p>The request will be made only after user stopped typing for 1s</p>
       <input type="text" value={textInput} onChange={handleChange} />
       <p>Received: {data}</p>

@@ -22,8 +22,8 @@ const ExampleUseAsync = () => {
   // use the details from the hook to conditionally render components
   // which depend on the status or the error
   return (
-    <article>
-      <h2>Example useAsync</h2>
+    <article id="use-async">
+      <h2>useAsync</h2>
       <button onClick={makeRequest} type="button">
         Make request
       </button>

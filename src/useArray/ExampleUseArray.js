@@ -6,8 +6,8 @@ const ExampleUseArray = () => {
     useArray(initialArray);
 
   return (
-    <article>
-      <h1>Example useArray</h1>
+    <article id="use-array">
+      <h1>useArray</h1>
       <p>{JSON.stringify(array)}</p>
       <div>
         <button onClick={() => set([1, 2, 3, 4, 5, 6])} type="button">

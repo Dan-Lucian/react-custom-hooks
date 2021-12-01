@@ -5,8 +5,8 @@ const ExampleUseScrollDirection = () => {
   console.log('render');
 
   return (
-    <article>
-      <h2>Example useScrollDirection</h2>
+    <article id="use-scroll-direction">
+      <h2>useScrollDirection</h2>
       <p>{direction}</p>
     </article>
   );

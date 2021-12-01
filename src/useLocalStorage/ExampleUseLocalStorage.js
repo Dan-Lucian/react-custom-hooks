@@ -9,8 +9,8 @@ const ExampleUseLocalStorage = () => {
   };
 
   return (
-    <article>
-      <h2>Example useLocalStorage</h2>
+    <article id="use-local-storage">
+      <h2>useLocalStorage</h2>
       <p>
         The text written in the input is saved in local storage in real time
       </p>

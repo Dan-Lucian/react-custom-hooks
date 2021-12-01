@@ -1,3 +1,4 @@
+import './App.css';
 import ExampleUseToggle from './useToggle/ExampleUseToggle';
 import ExampleUseTimeout from './useTimeout/ExampleUseTimeout';
 import ExampleUseScrollDirection from './useScrollDirection/ExampleUseScrollDirection';
@@ -7,8 +8,32 @@ import ExampleUseDebounce from './useDebounce/ExampleUseDebounce';
 import ExampleUseArray from './useArray/ExampleUseArray';
 
 const App = () => (
-  <div style={{ height: '2000px' }}>
+  <div>
     <h1>Cutom Hooks</h1>
+    <ol className="list-custom-hooks">
+      <li>
+        <a href="#use-toggle">useToggle</a>
+      </li>
+      <li>
+        <a href="#use-timeout">usetimeout</a>
+      </li>
+      <li>
+        <a href="#use-scroll-direction">useScrollDirection</a>
+      </li>
+      <li>
+        <a href="#use-local-storage">uselocalStorage</a>
+      </li>
+      <li>
+        <a href="#use-async">useAsync</a>
+      </li>
+      <li>
+        <a href="#use-debounce">useDebounce</a>
+      </li>
+      <li>
+        <a href="#use-array">useArray</a>
+      </li>
+    </ol>
+
     <ExampleUseToggle />
     <hr />
     <ExampleUseTimeout />
