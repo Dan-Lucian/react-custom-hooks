@@ -6,6 +6,7 @@ import ExampleUseLocalStorage from './useLocalStorage/ExampleUseLocalStorage';
 import ExampleUseAsync from './useAsync/ExampleUseAsync';
 import ExampleUseDebounce from './useDebounce/ExampleUseDebounce';
 import ExampleUseArray from './useArray/ExampleUseArray';
+import ExampleUseOutsideClick from './useOutsideClick/ExampleUseOutsideClick';
 
 const App = () => (
   <main className="wrapper-main">
@@ -39,6 +40,9 @@ const App = () => (
       <li>
         <a href="#use-array">useArray</a>
       </li>
+      <li>
+        <a href="#use-outside-click">useOutsideClick</a>
+      </li>
     </ol>
 
     <ExampleUseToggle />
@@ -48,6 +52,7 @@ const App = () => (
     <ExampleUseAsync />
     <ExampleUseDebounce />
     <ExampleUseArray />
+    <ExampleUseOutsideClick />
   </main>
 );
 

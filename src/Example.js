@@ -11,8 +11,8 @@ const Example = ({ children, title }) => {
     <article id={id}>
       <hr />
       <h2>
-        {title}
         <a href="#main-title">⬆️</a>
+        {title}
       </h2>
       {children}
     </article>
