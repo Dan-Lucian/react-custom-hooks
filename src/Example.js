@@ -5,7 +5,7 @@ const Example = ({ children, title }) => {
     .map((word) => word.toLowerCase())
     .join('-');
 
-  console.log(`id: ${id}`);
+  console.log(`render: ${id}`);
 
   return (
     <article id={id}>

@@ -5,7 +5,6 @@ import Example from '../Example';
 
 const ExampleUseScrollDirection = () => {
   const direction = useScrollDirection('down');
-  console.log('render');
 
   return (
     <Example title="useScrollDirection">
