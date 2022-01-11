@@ -11,6 +11,7 @@ import ExampleUseArray from './useArray/ExampleUseArray';
 import ExampleUseOutsideClick from './useOutsideClick/ExampleUseOutsideClick';
 import ExampleUseStateWithHistory from './useStateWithHistory/ExampleUseStateWithHistory';
 import ExampleUseEventListener from './useEventListener/ExampleUseEventListener';
+import ExampleUseOnScreen from './useOnScreen/ExampleUseOnScreen';
 
 const App = () => (
   <main className="wrapper-main">
@@ -35,6 +36,7 @@ const App = () => (
     <ExampleUseOutsideClick />
     <ExampleUseStateWithHistory />
     <ExampleUseEventListener />
+    <ExampleUseOnScreen />
   </main>
 );
 

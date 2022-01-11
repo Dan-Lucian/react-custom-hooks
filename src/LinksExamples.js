@@ -30,6 +30,9 @@ const LinksExamples = () => (
     <li>
       <a href="#use-event-listener">useEventListener</a>
     </li>
+    <li>
+      <a href="#use-on-screen">useOnScreen</a>
+    </li>
   </ol>
 );
 
