@@ -1,7 +1,7 @@
 import { useCallback, useState } from 'react';
 
 /**
- * Toggles a state.
+ * Creates a state which can be toggled.
  *
  * @param {boolean} initialState - initial toggle state.
  *

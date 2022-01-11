@@ -1,7 +1,8 @@
 import { useState, useRef, useCallback } from 'react';
 
 /**
- * Tracks if a click is outside an element.
+ * Creates a state that remembers "capacity" amount of values it has been in the past.
+ *
  * @param {node} ref a ref to the element.
  * @param {object} object a configuration object with capacity prop
  *

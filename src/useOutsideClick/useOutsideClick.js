@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 
 /**
  * Tracks if a click is outside an element.
+ *
  * @param {node} ref a ref to the element.
  *
  * @returns {boolean} true if clicked outside, false if not.
