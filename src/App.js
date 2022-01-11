@@ -8,6 +8,7 @@ import ExampleUseDebounce from './useDebounce/ExampleUseDebounce';
 import ExampleUseArray from './useArray/ExampleUseArray';
 import ExampleUseOutsideClick from './useOutsideClick/ExampleUseOutsideClick';
 import ExampleUseStateWithHistory from './useStateWithHistory/ExampleUseStateWithHistory';
+import ExampleUseEventListener from './useEventListener/ExampleUseEventListener';
 
 const App = () => (
   <main className="wrapper-main">
@@ -47,6 +48,9 @@ const App = () => (
       <li>
         <a href="#use-state-with-history">useStateWithHistory</a>
       </li>
+      <li>
+        <a href="#use-event-listener">useEventListener</a>
+      </li>
     </ol>
 
     <ExampleUseToggle />
@@ -58,6 +62,7 @@ const App = () => (
     <ExampleUseArray />
     <ExampleUseOutsideClick />
     <ExampleUseStateWithHistory />
+    <ExampleUseEventListener />
   </main>
 );
 
