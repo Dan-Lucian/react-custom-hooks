@@ -12,6 +12,7 @@ import ExampleUseOutsideClick from './useOutsideClick/ExampleUseOutsideClick';
 import ExampleUseStateWithHistory from './useStateWithHistory/ExampleUseStateWithHistory';
 import ExampleUseEventListener from './useEventListener/ExampleUseEventListener';
 import ExampleUseOnScreen from './useOnScreen/ExampleUseOnScreen';
+import ExampleUseHover from './useHover/ExampleUseHover';
 
 const App = () => (
   <main className="wrapper-main">
@@ -37,6 +38,7 @@ const App = () => (
     <ExampleUseStateWithHistory />
     <ExampleUseEventListener />
     <ExampleUseOnScreen />
+    <ExampleUseHover />
   </main>
 );
 

@@ -33,6 +33,9 @@ const LinksExamples = () => (
     <li>
       <a href="#use-on-screen">useOnScreen</a>
     </li>
+    <li>
+      <a href="#use-hover">useHover</a>
+    </li>
   </ol>
 );
 
