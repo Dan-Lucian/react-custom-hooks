@@ -26,6 +26,7 @@ const useOutsideClick = () => {
         document.removeEventListener('pointerdown', handleClickOutside);
       };
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [ref.current]);
 
   return [ref, isClickOutside];
