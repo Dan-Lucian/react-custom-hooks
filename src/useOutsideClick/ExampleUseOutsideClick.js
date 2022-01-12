@@ -1,12 +1,9 @@
-import { useRef } from 'react';
 import Example from '../Example';
 import { useOutsideClick } from './useOutsideClick';
 
 const ExampleUseOutsideClick = () => {
-  const refContainer = useRef(null);
-
-  // needs a ref to the element
-  const isClickOutside = useOutsideClick(refContainer);
+  // returns a ref to be put on the component
+  const [refContainer, isClickOutside] = useOutsideClick();
 
   return (
     <Example title="useOutsideClick">

@@ -1,31 +1,34 @@
-import { useEffect, useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 
 /**
  * Tracks if a click is outside an element.
  *
- * @param {node} ref a ref to the element.
- *
- * @returns {boolean} true if clicked outside, false if not.
+ * @returns {array} [ref, isClickOuside], ref should be put on the component.
  */
-const useOutsideClick = (ref) => {
+const useOutsideClick = () => {
   const [isClickOutside, setIsClickOutside] = useState(false);
 
+  const ref = useRef(null);
+
   useEffect(() => {
-    const handleClickOutside = (e) => {
-      if (ref.current && !ref.current.contains(e.target)) {
-        setIsClickOutside(true);
-      } else {
-        setIsClickOutside(false);
-      }
-    };
+    const node = ref.current;
+    if (node) {
+      const handleClickOutside = (e) => {
+        if (ref.current && !ref.current.contains(e.target)) {
+          setIsClickOutside(true);
+        } else {
+          setIsClickOutside(false);
+        }
+      };
 
-    document.addEventListener('pointerdown', handleClickOutside);
-    return () => {
-      document.removeEventListener('pointerdown', handleClickOutside);
-    };
-  }, [ref]);
+      document.addEventListener('pointerdown', handleClickOutside);
+      return () => {
+        document.removeEventListener('pointerdown', handleClickOutside);
+      };
+    }
+  }, [ref.current]);
 
-  return isClickOutside;
+  return [ref, isClickOutside];
 };
 
 export { useOutsideClick };
