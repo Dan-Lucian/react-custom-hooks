@@ -13,6 +13,7 @@ import ExampleUseStateWithHistory from './useStateWithHistory/ExampleUseStateWit
 import ExampleUseEventListener from './useEventListener/ExampleUseEventListener';
 import ExampleUseOnScreen from './useOnScreen/ExampleUseOnScreen';
 import ExampleUseHover from './useHover/ExampleUseHover';
+import ExampleUseAnimation from './useAnimation/ExampleUseAnimation';
 
 const App = () => (
   <main className="wrapper-main">
@@ -39,6 +40,7 @@ const App = () => (
     <ExampleUseEventListener />
     <ExampleUseOnScreen />
     <ExampleUseHover />
+    <ExampleUseAnimation />
   </main>
 );
 
