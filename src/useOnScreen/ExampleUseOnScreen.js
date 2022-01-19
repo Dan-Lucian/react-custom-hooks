@@ -1,17 +1,15 @@
-import { useRef } from 'react';
 import { useOnScreen } from './useOnScreen';
 
 // utils
 import Example from '../Example';
 
 const ExampleUseOnScreen = () => {
-  const elementRef = useRef();
-  const onScreen = useOnScreen(elementRef, '-100px');
+  const [ref, onScreen] = useOnScreen('-100px');
 
   return (
     <Example title="useOnScreen">
       <div
-        ref={elementRef}
+        ref={ref}
         style={{
           width: '100px',
           height: '300px',
