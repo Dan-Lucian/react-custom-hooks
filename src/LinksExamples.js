@@ -39,6 +39,9 @@ const LinksExamples = () => (
     <li>
       <a href="#use-animation">useAnimation</a>
     </li>
+    <li>
+      <a href="#use-canvas">useCanvas</a>
+    </li>
   </ol>
 );
 

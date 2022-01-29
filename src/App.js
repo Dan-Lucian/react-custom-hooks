@@ -14,6 +14,7 @@ import ExampleUseEventListener from './useEventListener/ExampleUseEventListener'
 import ExampleUseOnScreen from './useOnScreen/ExampleUseOnScreen';
 import ExampleUseHover from './useHover/ExampleUseHover';
 import ExampleUseAnimation from './useAnimation/ExampleUseAnimation';
+import ExampleUseCanvas from './useCanvas/ExampleUseCanvas';
 
 const App = () => (
   <main className="wrapper-main">
@@ -41,6 +42,7 @@ const App = () => (
     <ExampleUseOnScreen />
     <ExampleUseHover />
     <ExampleUseAnimation />
+    <ExampleUseCanvas />
   </main>
 );
 
